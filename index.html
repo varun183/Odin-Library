@@ -1,37 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Varun Lib</title>
 </head>
+
 <body>
 
-    <header class="libraryTitle">
-        Welcome to your Library collections.
-    </header>
 
-    <main class="container">
-        <div class="addBook">
 
-            
+    <div class="displayContainer">
 
+
+    </div>
+    <div class="addBookContainer">
+        <div class="welcomeTitle">
+            <p class="libraryTitle">
+                Welcome to your Library.
+            </p>
         </div>
 
 
-        <article>
-            <div class="displayBooks">
-               <div class="card">
-                <p class="bookInfo">
-                    book info here
-                </p>
-               </div>
+        <form id="form-id">
 
+            <div class="title form-item">
+                <div class="input-container">
+                    <label for="title">Title: *</label>
+                    <input type="text" id="title" name="title">
+                </div>
             </div>
-        </article>
-    </main>
-    
+
+            <div class="author form-item">
+                <div class="input-container">
+                    <label for="author">Author: *</label>
+                    <input type="text" id="author" name="author">
+                </div>
+            </div>            
+        
+            <div class="pages form-item form-control">
+                <div class="input-container">
+                    <label for="pages">Pages: </label>
+                    <input type="number" id="pages" name="weight">
+                </div>
+            </div>
+
+            <div class="form-item">
+                <div class="input-container ckeckbox">
+                    <label for="read">Check if read: </label>
+                    <input type="checkbox" id="read-form" name="read" value="isRead" />                        
+                </div>
+            </div>
+ 
+            
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+
+
+
+
+    </div>
+
+
 </body>
+
 </html>
